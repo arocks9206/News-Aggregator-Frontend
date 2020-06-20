@@ -13,11 +13,13 @@ code {
 }
 
 .sidebar {
-  display: flex;
   float: right;
-  max-width: 240px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+	width: 200px;
+	padding: 15px 10px;
+  background-color: #6688CC;
 }
+
+
 
 .searchbar {
   float: right;
