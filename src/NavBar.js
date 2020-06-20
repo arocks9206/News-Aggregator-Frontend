@@ -1,21 +1,27 @@
 import React from 'react';
 
+
+
 const NavBar = (props) => {
   return (
     <header>
+    <img src="/images/logo.png" alt="Logo"/>
 
       <ul>
+      <li className="navLink">
+        <a href="/home">Home</a>
+      </li>
         <li className="navLink">
-          <a href="/home">Home</a>
+          <a href="/stories">News Articles</a>
         </li>
         <li className="navLink">
-          <a href="/about">About</a>
+          <a href="/about">About Us</a>
         </li>
-        <li className="navLink">
-          <a href="/news">News</a>
-        </li>
-
       </ul>
+
+      <div className="searchbar">
+        <input type="text" className="input" placeholder="Search..." />
+      </div>
     </header>
   )
 }

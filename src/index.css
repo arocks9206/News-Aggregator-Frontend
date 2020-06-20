@@ -13,11 +13,79 @@ code {
 }
 
 .sidebar {
+  display: flex;
   float: right;
   max-width: 240px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.navbar{
+.searchbar {
+  float: right;
+}
 
+.component {
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.name {
+  color: darkSlateGray;
+}
+
+ul.component-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li.component-item {
+  display: inline;
+}
+
+.navLink {
+  display: inline;
+}
+
+body {
+  height: 125vh;
+  font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+#root {
+  margin-top: 80px;
+  padding: 30px;
+}
+
+.main-image{
+  width:100%;
+  height:100%;
+}
+header {
+  background-color: #182978;
+  opacity: 90%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+header * {
+    display: inline;
+}
+
+header img {
+  height: 150px;
+  margin-left: 40px;
+}
+
+header li {
+  margin: 20px;
+}
+
+a {
+  color: #6688CC;
 }
