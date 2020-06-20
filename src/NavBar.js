@@ -4,7 +4,7 @@ class NavBar extends Component {
     constructor(props){
       super(props);
         this.state = {
-          searchbar: []
+          list: []
         }
       this.handleChange = this.handleChange.bind(this);
     }

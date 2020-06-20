@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -43,5 +43,6 @@ function SideBar({ items, depthStep, depth }) {
     </div>
   )
 }
+
 
 export default SideBar;
