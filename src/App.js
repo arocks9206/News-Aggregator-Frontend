@@ -1,11 +1,9 @@
 import React from 'react';
-import NewsContainer from './containers/NewsContainer.js';
-
-import './App.css';
+import MainContainer from './containers/MainContainer.js';
 
 function App() {
   return (
-    <NewsContainer/>
+    <MainContainer/>
   );
 }
 
