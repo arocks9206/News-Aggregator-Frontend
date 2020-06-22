@@ -3,7 +3,7 @@ import React, {Fragment} from 'react';
 import NavBar from '../NavBar.js';
 import SideBar from '../SideBar.js';
 import NewsContainer from './NewsContainer.js';
-
+import Ad from '../Ad.js';
 
 const MainContainer = () => {
 
@@ -35,6 +35,7 @@ const MainContainer = () => {
         <NavBar/>
         <NewsContainer/>
         <SideBar items={items}/>
+        <Ad/>
       </Fragment>
     )
 }

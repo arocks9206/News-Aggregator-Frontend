@@ -12,6 +12,15 @@ code {
     monospace;
 }
 
+.adspace-container img {
+  height: 200px;
+  width: 25%;
+  float: right;
+  position: fixed;
+  top: 90px;
+  right: 30px;
+}
+
 .sidebar {
   float: right;
   max-width: 240px;
