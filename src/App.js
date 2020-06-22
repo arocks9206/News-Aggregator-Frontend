@@ -3,7 +3,9 @@ import MainContainer from './containers/MainContainer.js';
 
 function App() {
   return (
+    <div id="wrapper">
     <MainContainer/>
+    </div>
   );
 }
 

@@ -14,7 +14,10 @@ const MainContainer = () => {
       items: [
         {name: "top stories", label: "Top Stories"},
         {name: "entertainment", label: "Entertainment"},
-        {name: "sport", label: "Sport"}
+        {name: "sport", label: "Sport"},
+        {name: "uk news", label: "Uk News"},
+        {name: "world news", label:"World News"},
+        {name: "best rated", label:"Best Rated"}
       ]
     },
     {
@@ -27,13 +30,28 @@ const MainContainer = () => {
         {name: "daily mail", label: "Daily Mail"}
       ]
     },
+    {
+      name: 'other',
+      label: 'Other',
+      items: [
+        {name: "site map", label: "Site Map"},
+        {name: "about", label: "About"},
+        {name: "Sample", label: "Sample"}
+      ]
+    }
   ]
 
     return (
       <Fragment>
+      <div id="mainPage">
         <NavBar/>
         <NewsContainer/>
+        <div id="sidebarWrapper">
+        <div id="adSpace">
+        </div>
         <SideBar items={items}/>
+        </div>
+        </div>
       </Fragment>
     )
 }

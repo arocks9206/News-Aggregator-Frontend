@@ -10,7 +10,7 @@ class NewsContainer extends Component {
   render(){
 
     return (
-      <div>
+      <div id="newsContainer">
         <h2>News Container</h2>
         <JournalistList/>
         <PublisherList/>
