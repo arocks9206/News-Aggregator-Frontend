@@ -16,6 +16,8 @@ class NewsContainer extends Component {
         <div class="item item-2"> <PublisherList/> </div>
         <div class="item item-3"> <SourceList/> </div>
         <div class="item item-4"> <StoryList/> </div>
+        <div class="item item-5"> <StoryList/> </div>
+        <div class="item item-6"> <StoryList/> </div>
       </div>
     );
   }
