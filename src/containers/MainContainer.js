@@ -4,6 +4,7 @@ import NavBar from '../NavBar.js';
 import SideBar from '../SideBar.js';
 import NewsContainer from './NewsContainer.js';
 
+
 const MainContainer = () => {
 
   const items = [
