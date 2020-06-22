@@ -11,12 +11,11 @@ class NewsContainer extends Component {
   render(){
 
     return (
-      <div>
-        <h2>News Container</h2>
-        <JournalistList/>
-        <PublisherList/>
-        <SourceList/>
-        <StoryList/>
+      <div id="newsContainer">
+        <div class="item item-1"> <JournalistList/> </div>
+        <div class="item item-2"> <PublisherList/> </div>
+        <div class="item item-3"> <SourceList/> </div>
+        <div class="item item-4"> <StoryList/> </div>
       </div>
     );
   }

@@ -21,20 +21,32 @@ code {
   right: 30px;
 }
 
-.sidebar {
-  float: right;
+.title {
+  position: fixed;
+  top: 90px;
+  right: 350px;
+}
+
+.title img {
+  height: 150px;
+}
+
+#sidebar {
+  display: flex;
+  position: fixed;
+  top: 300px;
+  right: 30px;
   max-width: 240px;
   border: 1px solid #182978;
   background-color: #ffffff;
   color: #182978;
+  margin-left: auto;
+  overflow-y: scroll;
+  order: 2;
 }
 
 a:hover {
   background-color: #ffffff;
-}
-
-.searchbar {
-  float: right;
 }
 
 .component {
@@ -93,7 +105,7 @@ header * {
 }
 
 header img {
-  height: 150px;
+  height: 65px;
   margin-left: 40px;
 }
 
@@ -103,4 +115,74 @@ header li {
 
 a {
   color: #6688CC;
+}
+
+header {
+  width: 100%;
+}
+
+#mainPage {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+#newsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  position: fixed;
+  bottom: 100px;
+}
+
+#newsContainer > div {
+  background: #4B9FE1;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.item-1 {
+  grid-column: 1 / span 1;
+  grid-row: first-line / 4;
+  position: fixed;
+  bottom: 200px;
+  left: 300px;
+}
+
+.item-2 {
+  grid-column: 2 / span 1;
+  grid-row: second-line / 4;
+  position: fixed;
+  bottom: 250px;
+  right: 300px;
+}
+
+.item-3 {
+  grid-column: 3 / span 1;
+  grid-row: third-line / 4;
+  position: fixed;
+  bottom: 200px;
+  left: 300px;
+}
+
+.item-4 {
+  grid-column: 4 / span 1;
+  grid-row: fourth-line / 4;
+  position: fixed;
+  bottom: 200px;
+  right: 300px;
+}
+
+#wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  height: 100%;
 }

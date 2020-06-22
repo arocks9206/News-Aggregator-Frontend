@@ -31,7 +31,7 @@ class NavBar extends Component {
  render(){
    return (
      <header>
-        <img src="/images/logo.png" alt="Logo"/>
+        <img src="/images/logo2.png" alt="Logo"/>
 
         <ul>
           <li className="navLink">
