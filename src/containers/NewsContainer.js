@@ -50,7 +50,8 @@ class NewsContainer extends Component {
     return (
         <Fragment>
           <div id="newsContainer">
-            <div className="item item-1"> <StoryList stories={this.state.stories} onStorySelected={this.handleStorySelected}/> </div>
+            <div className="item item-1"> <StoryList stories={this.state.stories} onStorySelected={this.handleStorySelected}/> 
+            </div>
           </div>
         </Fragment>
     );
