@@ -24,11 +24,12 @@ code {
 .title {
   position: fixed;
   top: 90px;
-  right: 350px;
+  right: 450px;
 }
 
 .title img {
   height: 150px;
+  width: auto;
 }
 
 #sidebar {
@@ -100,12 +101,14 @@ header {
   display: flex;
   align-items: center;
 }
+
 header * {
     display: inline;
 }
 
 header img {
   height: 65px;
+  width: auto;
   margin-left: 40px;
 }
 
