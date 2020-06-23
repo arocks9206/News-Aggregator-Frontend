@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+//import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import PublisherList from '../components/publishers/PublisherList.js';
 import SourceList from '../components/sources/SourceList.js';
 import StoryList from '../components/stories/StoryList.js';
@@ -12,8 +12,20 @@ class NewsContainer extends Component {
     this.state = {
       stories: [],
       sources: [],
-      publishers: []
-    }
+      publishers: [],
+      selectedStory: null
+    };
+    this.handleStorySelected = this.handleStorySelected(bind);
+  }
+
+  handleStorySelected(id) {
+    this.setState({selectedStory: id})
+  }
+
+  render() {
+    const selectedStory = this.state.stories.find(story => {
+      story.id === this.state.selectedStory;
+    })
   }
 
   componentDidMount(){
@@ -36,27 +48,14 @@ class NewsContainer extends Component {
   render(){
 
     return (
-      <Router>
         <Fragment>
-        <div id="newsContainer">
-          <div className="item item-2"> <PublisherList/> </div>
-          <div className="item item-4"> <StoryList stories={this.state.stories}/> </div>
-          <SourceList sources={this.state.sources}/>
-        </div>
-          <Switch>
-          <Route render={(props) => {
-           return <StoryList stories={this.state.stories}/>
-       }} />
-       <Route render={(props) => {
-           return <SourceList sources={this.state.sources}/>
-       }} />
-       <Route render={(props) => {
-           return <PublisherList publishers={this.state.publishers}/>
-       }} />
-          </Switch>
+          <div id="newsContainer">
+            <div className="item item-2"> <PublisherList/> </div>
+            <div className="item item-4"> <StoryList stories={this.state.stories} onStorySelected={this.handleStorySelected}/> </div>
+          </div>
         </Fragment>
-      </Router>
     );
   }
 }
+
 export default NewsContainer;
