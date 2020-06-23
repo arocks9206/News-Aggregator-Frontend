@@ -35,7 +35,7 @@ class NavBar extends Component {
 
         <ul>
           <li className="navLink">
-            <a href="/home">Home</a>
+            <a href="/">Home</a>
           </li>
           <li className="navLink">
             <a href="/stories">Articles</a>
