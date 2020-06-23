@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-//import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import NavBar from '../NavBar.js';
 import SideBar from '../SideBar.js';
 import NewsContainer from './NewsContainer.js';
@@ -11,37 +11,46 @@ const MainContainer = () => {
   const items = [
     {name: 'home', label: 'Home'},
     {
-      name: 'stories',
-      label: 'Stories',
+      name: 'news',
+      label: 'News',
       items: [
         {name: "top stories", label: "Top Stories"},
-        {name: "entertainment", label: "Entertainment"},
-        {name: "sport", label: "Sport"}
       ]
     },
     {
-      name: 'sources',
-      label: 'Sources',
+      name: 'publishers',
+      label: 'Publishers',
       items: [
         {name: "bbc", label: "BBC"},
-        {name: "the independent", label: "The Independent"},
-        {name: "the guardian", label: "The Guardian"}
+        {name: "independent", label: "Independent"},
+        {name: "guardian", label: "Guardian"},
+        {name: "mirror", label: "Mirror"}
       ]
     },
+    {name: 'sources', label: 'Sources'}
   ]
 
     return (
+      <Router>
       <Fragment>
-      <div id="mainPage">
+
+        <div id="mainPage">
+          <NewsContainer/>
+          <Ad/>
+          <Title/>
+        </div>
+
+        <div id="sidebar"> <SideBar items={items}/> </div>
+
         <NavBar/>
-        <NewsContainer/>
-      </div>
+        <Switch>
+            <Route path="/stories" component={NewsContainer}/>
+            <Route path="/publishers" component={NewsContainer}/>
+            <Route path="/sources" component={NewsContainer}/>
+        </Switch>
 
-      <div id="sidebar"> <SideBar items={items}/> </div>
-
-        <Ad/>
-        <Title/>
       </Fragment>
+      </Router>
     )
 }
 
