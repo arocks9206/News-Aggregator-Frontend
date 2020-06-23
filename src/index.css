@@ -182,14 +182,6 @@ header {
   align-self: center;
 }
 
-.item-6 {
-  grid-column: 4 / span 1;
-  grid-row: fourth-line / 4;
-  position: fixed;
-  top: 300px;
-  left: 365px;
-  align-self: center;
-}
 
 #wrapper {
   height: 100%;
