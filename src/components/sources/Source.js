@@ -9,7 +9,7 @@ const Source = ({source}) => {
   return(
     <Fragment>
 
-      <img src={source.sourceImg} />
+      <img src={source.sourceImg} alt=""/>
       <h3>{source.sourceTitle}</h3>
       <p>{source.publisher.name}</p>
       <p>{source.rating}</p>

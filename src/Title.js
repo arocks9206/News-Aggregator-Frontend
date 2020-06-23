@@ -2,7 +2,7 @@ import React from 'react';
 
 const Title = (props) => {
   return(
-    <div class="title">
+    <div className="title">
       <img src="/images/logo.png"  alt="Ad"/>
     </div>
   )
