@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-//import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import React, {Component, Fragment} from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import PublisherList from '../components/publishers/PublisherList.js';
 import SourceList from '../components/sources/SourceList.js';
 import StoryList from '../components/stories/StoryList.js';
@@ -36,13 +36,28 @@ class NewsContainer extends Component {
   render(){
 
     return (
-      <div id="newsContainer">
-        <div className="item item-1"> <PublisherList/> </div>
-        <div className="item item-2"> <SourceList/> </div>
-        <div className="item item-3"> <StoryList/> </div>
-        <div className="item item-4"> <StoryList/> </div>
-        <div className="item item-5"> <StoryList/> </div>
-      </div>
+      <Router>
+        <Fragment>
+        <div id="newsContainer">
+          <div className="item item-1"> <PublisherList/> </div>
+          <div className="item item-2"> <SourceList/> </div>
+          <div className="item item-3"> <StoryList/> </div>
+          <div className="item item-4"> <StoryList/> </div>
+          <div className="item item-5"> <StoryList/> </div>
+        </div>
+          <Switch>
+          <Route render={(props) => {
+           return <StoryList stories={this.state.stories}/>
+       }} />
+       <Route render={(props) => {
+           return <SourceList sources={this.state.sources}/>
+       }} />
+       <Route render={(props) => {
+           return <PublisherList publishers={this.state.publishers}/>
+       }} />
+          </Switch>
+        </Fragment>
+      </Router>
     );
   }
 }
