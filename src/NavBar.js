@@ -35,13 +35,16 @@ class NavBar extends Component {
 
         <ul>
           <li className="navLink">
-            <a href="/home">Home</a>
+            <a href="/">Home</a>
           </li>
           <li className="navLink">
-            <a href="/stories">News Articles</a>
+            <a href="/stories">Articles</a>
           </li>
           <li className="navLink">
-            <a href="/about">About Us</a>
+            <a href="/publishers">Publishers</a>
+          </li>
+          <li className="navLink">
+            <a href="/sources">Sources</a>
           </li>
         </ul>
 
