@@ -165,32 +165,6 @@ header {
   left: 150px;
 }
 
-.item-4 {
-  grid-column: 4 / span 1;
-  grid-row: fourth-line / 4;
-  position: fixed;
-  bottom: 70px;
-  right: 300px;
-}
-
-.item-5 {
-  grid-column: 3 / span 1;
-  grid-row: third-line / 4;
-  position: fixed;
-  bottom: 70px;
-  left: 365px;
-  align-self: center;
-}
-
-.item-6 {
-  grid-column: 4 / span 1;
-  grid-row: fourth-line / 4;
-  position: fixed;
-  top: 300px;
-  left: 365px;
-  align-self: center;
-}
-
 #wrapper {
   height: 100%;
   width: 100%;

@@ -37,11 +37,9 @@ class NewsContainer extends Component {
 
     return (
       <div id="newsContainer">
-        <div class="item item-2"> <PublisherList/> </div>
-        <div class="item item-3"> <SourceList/> </div>
-        <div class="item item-4"> <StoryList/> </div>
-        <div class="item item-5"> <StoryList/> </div>
-        <div class="item item-6"> <StoryList/> </div>
+        <div className="item item-1"> <PublisherList/> </div>
+        <div className="item item-2"> <SourceList/> </div>
+        <div className="item item-3"> <StoryList/> </div>
       </div>
     );
   }
