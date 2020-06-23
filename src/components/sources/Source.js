@@ -1,11 +1,20 @@
 import React, {Fragment} from 'react';
 
-const Source = () => {
+const Source = ({source}) => {
+
+  if (!source) {
+    return "Loading..."
+  }
 
   return(
     <Fragment>
 
-      <p>I am a source</p>
+      <img src={source.sourceImg} alt=""/>
+      <h3>{source.sourceTitle}</h3>
+      <p>{source.publisher.name}</p>
+      <p>{source.rating}</p>
+      <button>Upvote</button>
+      <button>Downvote</button>
 
     </Fragment>
   )
