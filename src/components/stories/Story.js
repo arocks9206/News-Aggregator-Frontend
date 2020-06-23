@@ -1,11 +1,15 @@
 import React, {Fragment} from 'react';
 
-const Story = () => {
+const Story = ({story}) => {
+
+  if (!story) {
+    return "Loading..."
+  }
 
   return(
     <Fragment>
 
-      <p>I am a story</p>
+      <h2>{story.title}</h2>
 
     </Fragment>
   )
