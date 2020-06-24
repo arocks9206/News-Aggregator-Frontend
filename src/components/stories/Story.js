@@ -1,11 +1,15 @@
 import React, {Fragment} from 'react';
 
-const Story = () => {
+const Story = ({story, handleStorySelected}) => {
+
+  if (!story) {
+    return "Loading..."
+  }
 
   return(
     <Fragment>
 
-      <p>I am a story</p>
+      <button onClick={()=>handleStorySelected(story)}>{story.title}</button>
 
     </Fragment>
   )
