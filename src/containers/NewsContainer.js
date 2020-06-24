@@ -47,14 +47,12 @@ class NewsContainer extends Component {
     )
 
     if (this.state.selectedStory === null) {
-      return <StoryList handleStorySelected={this.handleStorySelected} stories={this.state.stories} onStorySelected={this.handleStorySelected}/>
+      return<StoryList handleStorySelected={this.handleStorySelected} stories={this.state.stories} onStorySelected={this.handleStorySelected}/>
     }
 
     if (this.state.selectedStory != null) {
       return <SourceList selectedStory={this.state.selectedStory}/>
     }
-
-    
   }
 }
 

@@ -145,12 +145,48 @@ header {
   color: darkSlateGray;
 }
 
+#storylist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  position: fixed;
+  bottom: 100px;
+  background: #ACBFE6;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+#sourcelist{
+  display: flex;
+  align-items: center;
+  
+}
+
 .item-1 {
   grid-column: 1 / span 1;
   grid-row: first-line / 4;
   position: fixed;
   top: 300px;
   left: 70px;
+}
+
+button {
+  background-color: #3778C2;
+  border: none;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  transition-duration: 0.6s;
+  padding: 4px;
+  color: #ffff;
+}
+
+button:hover {
+  background-color: #6688CC;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
 }
 
 #wrapper {

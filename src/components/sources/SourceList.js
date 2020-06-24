@@ -12,9 +12,11 @@ const SourceList = (props) => {
     })
 
     return (
-      <ul>
-        {allSources}
-      </ul>
+      <div id="sourcelist">
+        <ul>
+          {allSources}
+        </ul>
+      </div>
     )
 
 

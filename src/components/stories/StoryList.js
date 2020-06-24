@@ -15,9 +15,11 @@ const StoryList = (props) => {
   })
 
   return (
-    <ul>
-      {allStories}
-    </ul>
+    <div id="storylist">
+      <ul>
+        {allStories}
+      </ul>
+    </div>
   )
 }
 
