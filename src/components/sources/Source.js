@@ -10,7 +10,7 @@ const Source = ({source}) => {
     <Fragment>
       <img src={source.sourceImg} alt=""/>
       <h3>{source.sourceTitle}</h3>
-      <a href={source.sourceLink}>Link</a>
+      <a href={source.sourceLink}>View Source</a>
       <p>{source.publisher.name}</p>
       <p>{source.rating}</p>
       <button>Upvote</button>
