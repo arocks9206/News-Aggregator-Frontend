@@ -18,14 +18,9 @@ class NewsContainer extends Component {
     this.handleStorySelected = this.handleStorySelected.bind(this);
   }
 
-  handleStorySelected(id) {
-    this.setState({selectedStory: id})
-  }
+  handleStorySelected(story) {
 
-  render() {
-    const selectedStory = this.state.stories.find(story =>
-      story.id === this.state.selectedStory
-    )
+    this.setState({selectedStory: story})
   }
 
   componentDidMount(){
@@ -47,14 +42,19 @@ class NewsContainer extends Component {
 
   render(){
 
-    return (
-        <Fragment>
-          <div id="newsContainer">
-            <div className="item item-1"> <StoryList stories={this.state.stories} onStorySelected={this.handleStorySelected}/> 
-            </div>
-          </div>
-        </Fragment>
-    );
+    const selectedStory = this.state.stories.find(story =>
+      story.id === this.state.selectedStory
+    )
+
+    if (this.state.selectedStory === null) {
+      return <StoryList handleStorySelected={this.handleStorySelected} stories={this.state.stories} onStorySelected={this.handleStorySelected}/>
+    }
+
+    if (this.state.selectedStory != null) {
+      return <SourceList selectedStory={this.state.selectedStory}/>
+    }
+
+    
   }
 }
 

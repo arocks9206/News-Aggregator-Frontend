@@ -2,23 +2,22 @@ import React from 'react';
 import Source from './Source.js';
 
 const SourceList = (props) => {
-  if (props.sources.length === 0) {
-    return "Loading..."
-  }
 
-  const allSources = props.sources.map((source, index) => {
+    const allSources = props.selectedStory.sources.map((source, index) => {
+      return (
+        <li key= {index}>
+          <Source source = {source}/>
+        </li>
+      )
+    })
+
     return (
-      <li>
-        <Source source={source} />
-      </li>
+      <ul>
+        {allSources}
+      </ul>
     )
-  })
 
-  return (
-    <ul>
-      {allSources}
-    </ul>
-  )
+
 }
 
 export default SourceList;

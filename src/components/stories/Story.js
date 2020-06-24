@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 
-const Story = ({story}) => {
+const Story = ({story, handleStorySelected}) => {
 
   if (!story) {
     return "Loading..."
@@ -9,7 +9,7 @@ const Story = ({story}) => {
   return(
     <Fragment>
 
-      <h2>{story.title}</h2>
+      <button onClick={()=>handleStorySelected(story)}>{story.title}</button>
 
     </Fragment>
   )
