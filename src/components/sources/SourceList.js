@@ -5,8 +5,8 @@ const SourceList = (props) => {
 
     const allSources = props.selectedStory.sources.map((source, index) => {
       return (
-        <li key= {index} className="component-item">
-          <div className="component">
+        <li key= {index} className="source-item">
+          <div className="source">
             <Source source = {source}/>
           </div>
         </li>
@@ -14,7 +14,7 @@ const SourceList = (props) => {
     })
 
     return (
-      <ul className="component-list">
+      <ul className="source-list">
         {allSources}
       </ul>
     )

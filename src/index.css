@@ -108,7 +108,7 @@ header {
 }
 
 header * {
-    display: inline;
+  display: inline;
 }
 
 header img {
@@ -129,27 +129,6 @@ header {
   width: 100%;
 }
 
-#mainPage {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 1rem;
-}
-
-#newsContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 1rem;
-  position: fixed;
-  bottom: 100px;
-}
-
-#newsContainer > div {
-  background: #ACBFE6;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  color: darkSlateGray;
-}
-
 #storylist {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -161,28 +140,25 @@ header {
   border-radius: 1rem;
 }
 
-.component {
+.source {
   margin: 20px;
   padding: 10px;
   width: 300px;
   border: 1px solid black;
 }
 
-ul.component-list {
+ul.source-list {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: 21%;
+  position: relative;
+  left: 10px;
+  top: 100px;
 }
 
-li.component-item {
+li.source-item {
   display: inline;
-}
-
-.item-1 {
-  grid-column: 1 / span 1;
-  grid-row: first-line / 4;
-  position: fixed;
-  top: 300px;
-  left: 70px;
 }
 
 button {
@@ -216,6 +192,7 @@ html {
 
 body {
   height: 100%;
+  margin-left: auto;
 }
 
 img {

@@ -33,11 +33,11 @@ const MainContainer = () => {
     return (
       <Fragment>
 
-        <div id="mainPage">
+        
           <NewsContainer/>
           <Ad/>
           <Title/>
-        </div>
+
 
         <div id="sidebar"> <SideBar items={items}/> </div>
 
