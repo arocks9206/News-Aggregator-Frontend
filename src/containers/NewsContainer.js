@@ -1,5 +1,4 @@
 import React, {Component, Fragment} from 'react';
-//import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import PublisherList from '../components/publishers/PublisherList.js';
 import SourceList from '../components/sources/SourceList.js';
 import StoryList from '../components/stories/StoryList.js';
