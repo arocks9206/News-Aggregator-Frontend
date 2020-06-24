@@ -151,10 +151,13 @@ ul.source-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  flex-basis: 21%;
+  flex-basis: 33.333333;
   position: relative;
   left: 10px;
   top: 100px;
+  overflow-y: scroll;
+overflow-x:hidden;
+max-height: 400px;
 }
 
 li.source-item {
@@ -197,4 +200,12 @@ body {
 
 img {
   width: 100px;
+}
+
+#side {
+  width: 20%;
+}
+
+#mainPage {
+  width: 80%;
 }
