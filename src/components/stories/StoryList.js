@@ -9,7 +9,7 @@ const StoryList = (props) => {
   const allStories = props.stories.map((story, index) => {
     return (
       <li key={index}>
-        <Story story = {story}/>
+        <Story handleStorySelected={props.handleStorySelected} story = {story}/>
       </li>
     )
   })
