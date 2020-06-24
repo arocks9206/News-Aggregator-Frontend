@@ -130,10 +130,10 @@ header {
 }
 
 #storylist {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 1rem;
+  display: flex;
+  justify-content: center;
   position: fixed;
+  right: 470px;
   bottom: 100px;
   background: #ACBFE6;
   padding: 1.5rem;
